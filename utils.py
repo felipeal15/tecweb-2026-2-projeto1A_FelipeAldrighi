@@ -21,4 +21,7 @@ extract_route(request)
 
 
 def read_file(filepath):
-  filepath.open
+    file = open(filepath, "rb") #APENAS O B NAO FUNCIONAVA, TEM QUE SER RB (read, binary) ; Definindo como o arquivo será aberto
+    content = file.read() #efetivamente lê o conteudo, tem que abrir, depois ler
+    file.close()
+    return content #TAMBEM TEM COMO UTILIZAR O WITH, QUE GARANTE QUE O ARQUIVO SERÁ FECHADO
