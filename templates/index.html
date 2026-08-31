@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Get-it</title>
-</head>
-<body>
-  <img src="img/logo-getit.png">
-  <p>Como o Post-it, mas com outro verbo</p>
+      <form class="form-card" method="post" action="/">
+{erro}
+        <input
+          class="form-card-title"
+          type="text"
+          name="titulo"
+          placeholder="Título"
+          value="{titulo}"
+        />
+        <textarea
+          class="autoresize"
+          name="detalhes"
+          placeholder="Digite o conteúdo..."
+        >{detalhes}</textarea>
+        <button class="btn" type="submit">Criar</button>
+      </form>
 
-  <form method="post">
-    <label for="titulo">Título</label>
-    <input id="titulo" type="text" name="titulo" />
-    <label for="detalhes">Detalhes</label>
-    <input id="detalhes" name="detalhes" />
-    <input type="submit" />
-  </form>
-
-<ul>
+      <div class="card-container">
 {notes}
-</ul>
-
-</body>
-</html>
+      </div>

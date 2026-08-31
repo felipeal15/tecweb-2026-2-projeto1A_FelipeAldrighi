@@ -1,4 +1,17 @@
-  <li>
-    <h3>{title}</h3>
-    <p>{details}</p>
-  </li>
+        <div class="card {favorita}" data-id="{id}">
+          <h3 class="card-title">{title}</h3>
+          <div class="card-content">
+            <p>{content}</p>
+          </div>
+          <div class="card-actions">
+            <form method="post" action="/favorite/{id}">
+              <button
+                class="card-action card-action-fav"
+                type="submit"
+                title="{favorita_titulo}"
+              >{favorita_icone}</button>
+            </form>
+            <a class="card-action" href="/edit/{id}" title="Editar">&#9998;</a>
+            <a class="card-action" href="/delete/{id}" title="Apagar">&#128465;</a>
+          </div>
+        </div>
