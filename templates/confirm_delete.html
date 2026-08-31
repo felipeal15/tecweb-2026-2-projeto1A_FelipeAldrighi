@@ -1,0 +1,18 @@
+      <div class="dialog">
+        <h2 class="dialog-title">Apagar esta anotação?</h2>
+        <p class="dialog-text">Depois de apagar não dá para voltar atrás.</p>
+
+        <div class="card card-preview" data-id="{id}">
+          <h3 class="card-title">{title}</h3>
+          <div class="card-content">
+            <p>{content}</p>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <a class="btn btn-secondary" href="/">Não, voltar</a>
+          <form method="post" action="/delete/{id}">
+            <button class="btn btn-danger" type="submit">Sim, apagar</button>
+          </form>
+        </div>
+      </div>

@@ -1,0 +1,20 @@
+      <form class="form-card" method="post" action="/edit/{id}">
+        <h2 class="form-card-heading">Editar anotação</h2>
+{erro}
+        <input
+          class="form-card-title"
+          type="text"
+          name="titulo"
+          placeholder="Título"
+          value="{titulo}"
+        />
+        <textarea
+          class="autoresize"
+          name="detalhes"
+          placeholder="Digite o conteúdo..."
+        >{detalhes}</textarea>
+        <div class="form-actions">
+          <a class="btn btn-secondary" href="/">Cancelar</a>
+          <button class="btn" type="submit">Salvar</button>
+        </div>
+      </form>
