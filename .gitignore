@@ -1,2 +1,8 @@
 #Excluindo a pasta inteira do pycache:
 **/__pycache__/
+*.pyc
+
+#Ambiente virtual
+env/
+venv/
+.venv/
